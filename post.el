@@ -600,7 +600,7 @@ Argument END End of region to be quoted."
   (uncomment-region beg end))
 
 ; From Dave Pearson, July 15, 2000
-(defun* split-quoted-paragraph (&optional (quote-string "> "))
+(cl-defun split-quoted-paragraph (&optional (quote-string "> "))
   "Split a quoted paragraph at point, keeping the quote."
   (interactive)
   (if (save-excursion
